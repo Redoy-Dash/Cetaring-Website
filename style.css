@@ -1,0 +1,390 @@
+/* Universal Style */
+
+/* color */
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --text-color2: orange;
+    --text-color2_2: rgb(150, 178, 50);
+    --text-color2_3: rgba(150, 178, 50, 0.515);
+    --text-color3: rgb(0, 0, 0);
+    --text-color4: rgb(255, 0, 0);
+    --text-color5: rgba(4, 4, 4, 0.687);
+
+    --bg-color: rgb(30, 34, 34);
+    --bg-color2: rgba(113, 112, 112, 0.802);
+
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* Style */
+
+/* Header Section */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .navbar {
+    background-color: var(--bg-color) !important;
+}
+
+.header .container img {
+    width: 20%;
+}
+
+.header .container .navbar a {
+    color: var(--text-color);
+}
+
+.header .container .navbar a:hover {
+    color: var(--text-color2);
+}
+
+/* Home Page */
+
+/* Banner Section */
+
+.section-1 .banner {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+.section-1 .banner .breadcrumb {
+    display: block;
+    text-align: center;
+    height: 100%;
+    align-content: center;
+}
+
+.section-1 .banner .breadcrumb span {
+    color: var(--text-color2);
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+/* Food Item */
+
+.food-item {
+    padding: 50px 0;
+}
+
+.food-item h2 {
+    text-transform: uppercase;
+    color: var(--text-color3);
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+.food-item .container .card .img img {
+    width: 100%;
+    transition: .4s;
+}
+
+.food-item .container .card:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.food-item .container .img {
+    overflow: hidden;
+}
+
+.food-item .container .card:hover .img img {
+    transform: scale(1.1);
+}
+
+.food-item .container .card .food-details a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--text-color3);
+    background-color: var(--text-color2_2);
+}
+
+.food-item .container .card .food-details a:hover {
+    color: var(--text-color4);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color2);
+}
+
+
+/* Gallery Section */
+
+.gallery h2 {
+    padding: 50px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.gallery .container .img img {
+    width: 100%;
+}
+
+
+/* Feedback Section */
+
+.feedback {
+    margin: 50px 0;
+}
+
+.feedback h2 {
+    padding: 50px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.feedback .container .feedb .feed {
+    border: 1px solid var(--text-color2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.feedback .container .feedb .feed .img img {
+    width: 200%;
+    height: 100%;
+}
+
+.feedback .container .feedb .feed .details {
+    padding: 15px 8px;
+    margin-left: 60px;
+}
+
+.feedback .container .feedb .feed .details p {
+    margin-bottom: 0;
+}
+
+.feedback .container .feedb .feed .details .ratting i {
+    color: var(--text-color2);
+}
+
+
+
+/* ************************************************************* */
+
+/* About Page */
+
+/* Banner Section */
+
+.banner-section .banner {
+    background-image: url(img/banner_2.jpg);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.banner-section .banner .breadcrumb {
+    display: block;
+    text-align: center;
+    height: 100%;
+    align-content: center;
+}
+
+.banner-section .banner .breadcrumb a {
+    color: var(--text-color) !important;
+}
+
+.banner-section .banner .breadcrumb a,
+span {
+    color: var(--text-color3);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Staff Profile */
+
+.staff-section {
+    padding: 50px 0;
+}
+
+.staff-section h2 {
+    text-transform: uppercase;
+    color: var(--text-color3);
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+.staff-section .container .card .img img {
+    width: 100%;
+    transition: .4s;
+}
+
+.staff-section .container .card:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.staff-section .container .img {
+    overflow: hidden;
+}
+
+.staff-section .container .card:hover .img img {
+    transform: scale(1.1);
+}
+
+/* Company About Section */
+
+.company-about {
+    padding: 50px 0;
+}
+
+.company-about h2 {
+    text-transform: uppercase;
+    color: var(--text-color3);
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+.company-about .container .img img {
+    width: 100%;
+}
+
+.company-about .container .details h3 {
+    font-size: 35px;
+}
+
+.company-about .container .details p {
+    padding: 20px 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.company-about .container .details a {
+    padding: 5px 10px;
+    border: 1px dotted var(--text-color4);
+    border-radius: 5px;
+    background-color: var(--text-color2);
+    color: var(--text-color4);
+    font-weight: 900;
+}
+
+.company-about .container .details a:hover {
+    color: var(--text-color3);
+    background-color: var(--text-color4);
+    border: 1px dotted var(--text-color3);
+}
+
+
+/* footer section */
+
+.footer_section {
+    margin: 90px 0 0 0;
+    background-color: var(--bg-color);
+}
+
+.footer_section .container .col-2 h3 {
+    color: var(--text-color2);
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.footer_section .container .col-2 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer_section .container .col-2 ul li {
+    padding: 5px 0;
+}
+
+.footer_section .container .col-2 ul li:last-child {
+    padding-bottom: 30px;
+}
+
+.footer_section .container .col-2 ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.footer_section .container .col-2 ul li a:hover {
+    color: var(--text-color2);
+}
+
+.footer_section .container .col-4 h3 {
+    color: var(--text-color2);
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.footer_section .container .col-4 p {
+    color: var(--text-color);
+    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.footer_section .container .col-4 {
+    position: relative;
+}
+
+
+.footer_section .container .col-4 input {
+    background-color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+}
+
+.footer_section .container .col-4 a {
+    text-decoration: none;
+    position: absolute;
+    top: 216px;
+    left: 200px;
+    font-size: 16px;
+    color: var(--text-color4);
+    background-color: var(--text-color2);
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.footer_section .container .col-8 {
+    margin: 40px 0;
+}
+
+.footer_section .container .col-8 p {
+    color: var(--text-color);
+    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer_section .container .col-8 p span {
+    color: var(--text-color2);
+    font-size: 20px;
+}
+
+
+.footer_section .container .col-4 .icon {
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color2);
+    align-content: center;
+    text-align: center;
+    margin-top: 40px;
+    transition: .6s;
+}
+
+.footer_section .container .col-4 .icon:hover {
+    background-color: var(--text-color2_3);
+    color: var(--text-color2);
+}
+
+.footer_section .container .col-4 .icon i {
+    font-size: 23px;
+    color: var(--text-color);
+}
+
+.footer_section .container .col-4 .icon:hover i {
+    color: var(--secondary-color);
+}
